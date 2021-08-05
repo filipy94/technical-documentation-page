@@ -1,0 +1,144 @@
+:root{
+    --color-table: #272725;
+  }
+  body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: #0e0e0c;
+    background-image: linear-gradient(115deg, rgba(13, 13, 12, 1), rgba(40, 40, 37, 0.85)), url(https://attackofthefanboy.com/wp-content/uploads/2021/06/chains-of-domination-key-art.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  html, body {
+    background-color: #0e0e0c;
+    color: #c3c3bb;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+    min-width: 190px;
+    font-size: 14px;
+  }
+  a {
+    color: #f2f20d;
+  }
+  #navbar {
+    position: fixed;
+    min-width: 190px;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(243, 243, 241, 0.7);
+  }
+  #navbar header {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  #navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #navbar li {
+    border-top: 2px solid;
+    position: relative;
+    width: 100%;
+    list-style: none;
+  }
+  #navbar a {
+    color: #c3c3bb;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+  }
+  #main-doc {
+    position: absolute;
+    margin-left: 210px;
+    padding: 10px;
+    margin-bottom: 110px;
+    text-align: justify;
+  }
+  #main-doc header {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .main-section {
+    margin-top: 40px;
+  }
+  h4 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+  code {
+    display: block;
+    text-align: justify;
+    background-color: var(--color-table);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  #Stats li {
+    list-style: circle;
+  }
+  .equip {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-table);
+    border-radius: 5px;
+    width: 45vw;
+    }
+  .equip li {
+    border-bottom: 1px solid;
+    margin: 0;
+    list-style: none;
+  }
+  .talent-build {
+    display: flex;
+    background-color: var(--color-table);
+    border-radius: 5px;
+    width: 40vw; 
+    }
+  .talent-build li {
+    padding: 2px;
+    border-bottom: 1px solid;
+    list-style: none;
+  }
+  .talents {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: repeat(7, 1fr);
+    align-self: center;
+    }
+  .selected-talent {
+    background-color: green;
+  }
+  @media only screen and (max-width: 700px) {
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+    #navbar {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
